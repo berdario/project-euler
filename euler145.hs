@@ -14,6 +14,7 @@ reversible' (d:da) (dr:dar) rem = (odd newd) && (reversible' da dar (newd `div` 
 	newd = d+dr+rem 
 
 digits :: Int -> [Int]
+-- digits = map (\c -> read [c]) . show
 digits a
 	| a' /= 0 = a `mod` 10 : digits a'
 	| otherwise = [a]
