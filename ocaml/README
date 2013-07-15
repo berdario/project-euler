@@ -1,0 +1,11 @@
+to build:
+
+`ocamlbuild -use-ocamlfind euler32.native`
+
+(or .byte instead of .native)
+
+to test in the Ocaml toplevel:
+
+#use "topfind";;
+#require "batteries";;
+open Batteries;;

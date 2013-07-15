@@ -5,3 +5,11 @@ euler12
 euler32
 euler9
 __pycache__
+ocaml/_build
+_build
+a.out
+euler12.cmi
+euler12.cmo
+target
+ocaml/euler32.byte
+ocaml/euler32.native

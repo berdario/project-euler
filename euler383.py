@@ -81,3 +81,20 @@ if __name__ == "__main__":
 
 
 #f5(factorial(5*5*5*25)) == 5*5*(5*f5(factorial(25))+1)
+
+def ff(n):
+    if n<5:
+        return 0
+    elif n<10:
+        return 1
+    elif n<25:
+        return 2
+    else:
+        e = log(n,5)
+        d,r = n//25, n%25
+        if r==0:
+            return d*2
+        else:
+            return d*2+ff(r)
+        
+        

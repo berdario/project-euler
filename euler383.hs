@@ -23,6 +23,16 @@ ffn' n x
 ff5 = ffn' 5
 ff3 = ffn 3
 
-result = length [1 | i <- [0..10000], ff5(2*i-1) < 2*ff5(i) ]
+--result = length [1 | i <- [0..10000], ff5(2*i-1) < 2*ff5(i) ]
 
-main = print result
+f 5 = 2
+f 25 = 2
+f n
+  | i > 3 = (3 *) $ f n' 
+  | otherwise = (i *) $ f n'
+  where 
+    e = floor $ logBase 5.0 $ fromIntegral n
+    i = div n $ (5 ^) e
+    n' = (5 ^) $ e-1
+
+--main = pr
